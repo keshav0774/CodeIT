@@ -9,7 +9,6 @@ import Admin from "./pages/adminPanel";
 import { checkAuthAPI } from "./pages/authSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
-import Test from './pages/test'
 import ProblemPage from "./pages/problemPage";
 import CreateProblem from "./pages/createProblem";
 import UpdateProblemList from "./pages/UpdateProblemList";
@@ -41,7 +40,6 @@ function App(){
   return (
     <>
      <Routes>
-         <Route path='/user/test' element={<Test></Test>}></Route>
          <Route path="/" element={isAuthenticated?<Home></Home>:<Navigate to='/signup'/>}></Route>
          <Route path='/login' element={isAuthenticated? <Navigate to='/'/>:<Login></Login>}></Route>
          <Route path='/signup' element={isAuthenticated?<Navigate to='/'/>:<Signup></Signup>}></Route>
