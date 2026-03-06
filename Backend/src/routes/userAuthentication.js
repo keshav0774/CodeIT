@@ -16,7 +16,7 @@ authRouter.post("/admin/emailverify",emailVerify)
 authRouter.post('/admin/logout', adminMiddleware, logout)
 authRouter.delete('/deleteprofile', userMiddleware, deleteProfile)
 authRouter.post('/forgetPassword', forgetPassword)
-authRouter.get('/check', userMiddleware,  (req,res)=>{
+authRouter.get('/check',   (req,res)=>{
      
     const reply = {
         firstName : req.result.firstName,
