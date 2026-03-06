@@ -15,6 +15,7 @@ const chat = require('./routes/ai');
 app.use(cors({
     origin:  'https://code-it-lilac.vercel.app',
     credentials:true,
+    allowedHeaders: ['Content-Type', 'Authorization'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 })) // connection between forntend & backend 
 
