@@ -8,7 +8,7 @@ export default defineConfig({
     tailwindcss()
   ],
   build: {
-    minify: 'esbuild',
+    minify: 'false',
     chunkSizeWarningLimit: 1600,
     rollupOptions: {
       output: {
