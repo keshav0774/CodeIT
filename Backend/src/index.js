@@ -13,7 +13,7 @@ const chat = require('./routes/ai');
 
 
 app.use(cors({
-    origin:  'http://localhost:5173',
+    origin:  'https://code-it-lilac.vercel.app',
     credentials:true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 })) // connection between forntend & backend 
