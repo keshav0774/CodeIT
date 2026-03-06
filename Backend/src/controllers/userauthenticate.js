@@ -65,10 +65,10 @@ const login = async (req,res)=>{
         const token = jwt.sign({_id:user._id, emailId:user.emailId,role:user.role},process.env.KEY,{expiresIn:'1h'});
         res.cookie("token",token,{ 
         httpOnly:true,
-        secure:false,
-        sameSite:"lax",
+        secure:true,
+        sameSite:"none",
         path:'/',
-        maxAge: 60 * 60 * 1000});
+        maxAge: 7*24*60 * 60 * 1000});
 
         res.status(200).json({
             user : reply,
