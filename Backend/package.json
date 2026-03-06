@@ -1,7 +1,7 @@
 {
   "name": "day1",
   "version": "1.0.0",
-  "main": "src/Backend/index.js",
+  "main": index.js",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
