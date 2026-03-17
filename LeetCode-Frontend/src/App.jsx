@@ -40,7 +40,7 @@ function App(){
   return (
     <>
      <Routes>
-         <Route path="/" element={isAuthenticated?<Home></Home>:<Navigate to='/signup'/>}></Route>
+         <Route path="/home" element={isAuthenticated?<Home></Home>:<Navigate to='/signup'/>}></Route>
          <Route path='/login' element={isAuthenticated? <Navigate to='/'/>:<Login></Login>}></Route>
          <Route path='/signup' element={isAuthenticated?<Navigate to='/'/>:<Signup></Signup>}></Route>
          <Route path='/profile' element={isAuthenticated?<Profile></Profile>:<Signup></Signup>}></Route>
