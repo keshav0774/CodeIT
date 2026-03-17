@@ -107,7 +107,7 @@ export default function Profile() {
         style={{ background: "rgba(0,0,0,0.75)", backdropFilter: "saturate(180%) blur(20px)", WebkitBackdropFilter: "saturate(180%) blur(20px)" }}
       >
         <div className="max-w-6xl mx-auto px-7 h-[52px] flex justify-between items-center">
-          <div className="flex items-center gap-2.5 cursor-pointer group" onClick={() => navigate('/home')}>
+          <div className="flex items-center gap-2.5 cursor-pointer group" onClick={() => navigate('/')}>
             <div className="w-7 h-7 bg-white text-black flex items-center justify-center text-[10px] font-medium rounded-[7px] transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
               &lt;/&gt;
             </div>
